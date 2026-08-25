@@ -16,3 +16,24 @@ let middleName = "Ngozi"
 let lastName = "Amakom"
 
 console.log("My name is " + firstName + " " + middleName + " " + lastName + ". I am " + age + "years old. " + "I am a " + gender  + ".")
+
+const title = document.getElementById("main-title");
+console.log(title.textContent);
+
+
+const items = document.getElementsByClassName("description");
+
+console.log(items[0].textContent); 
+
+const buttons = document.getElementsByTagName("button");
+
+console.log(buttons[1].textContent); 
+
+const firstParagraph = document.querySelector("p"); 
+
+const standardBox = document.querySelector("#box"); 
+
+const firstItem = document.querySelector(".text-item"); 
+
+const allItems = document.querySelectorAll(".text-item");
+console.log(allItems.length); 
