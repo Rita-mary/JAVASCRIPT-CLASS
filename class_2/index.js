@@ -30,6 +30,7 @@ const buttons = document.getElementsByTagName("button");
 console.log(buttons[1].textContent); 
 
 const firstParagraph = document.querySelector("p"); 
+console.log(firstParagraph.textContent,222222222)
 
 const standardBox = document.querySelector("#box"); 
 
