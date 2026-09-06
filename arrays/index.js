@@ -140,13 +140,29 @@ const anyEven = allNumb.some((num)=>{
 console.log(anyEven)
 
 // Assignment
+// convert every name to uppercase
 let people = ["john", "mary", "peter", "mark"]
 
-// convert every name to uppercase
+let nameUpper = people.map((name) =>{
+  return name.toUpperCase()
+})
 
-let price = [ 200, 300, 500, 600]
+console.log(nameUpper)
+
 
 // use an array method to calculate the total price
-let women = ["Eve" , "Michelle", "Sandra", "Judith", "Chinwe"]
+let price = [ 200, 300, 500, 600]
+let total = 0
+price.forEach((num) =>{
+  total = total + num
+})
+
+console.log(total)
+
 
 // Arrange in alphabetical order 
+let women = ["Eve" , "Michelle", "Sandra", "Judith", "Chinwe"]
+
+let sorted = women.sort()
+
+console.log(sorted)
