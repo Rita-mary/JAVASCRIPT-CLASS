@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(84, 30, 23); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px; 
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: rgb(235, 215, 215);
+    background-color: rgb(114, 53, 45); 
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); 
+    width: 600px; 
+    padding: 40px;
+    height: auto; 
+    min-height: 380px;
+}
+
+#ph {
+    color: rgb(255, 255, 255); 
+    font-weight: 600;
+}
+
+.input-container {
+    display: flex;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.num-box {
+    width: 55px;
+    height: 55px;
+    outline: none;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(84, 30, 23);
+    border-radius: 12px; 
+    border: 2px solid transparent;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.num-box:focus {
+    border-color: rgb(235, 215, 215);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.num-box:disabled {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(84, 30, 23, 0.5);
+    cursor: not-allowed;
+    transform: none;
+}
+
+#checkbtn {
+    padding: 12px 30px;
+    background-color: rgb(84, 30, 23);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+#checkbtn:hover {
+    transform: scale(1.05); 
+    background-color: rgb(64, 20, 15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#checkbtn:active {
+    transform: scale(0.98);
+}
+
+
+#sticker {
+  font-size: 50px;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+
