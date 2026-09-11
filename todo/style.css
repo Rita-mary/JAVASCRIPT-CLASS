@@ -1,0 +1,182 @@
+/* Reset default styles and set a clean font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Base body styles centering the application layout */
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container wrappers for layout spacing */
+body > div:first-of-type {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Style the Toggle Mode button */
+body > div:first-of-type button {
+    background-color: #e2e8f0;
+    color: #475569;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+body > div:first-of-type button:hover {
+    background-color: #cbd5e1;
+}
+
+/* Form container styling */
+form {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+}
+
+form h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #0f172a;
+}
+
+/* Flex layout to keep input and add button inline */
+form fieldset, 
+form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+form h1 {
+    width: 100%;
+}
+
+/* Style the text input field */
+form input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s;
+    background-color: #f8fafc;
+}
+
+form input[type="text"]:focus {
+    border-color: #6366f1;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Style the "Add Todo" button */
+form button[type="submit"] {
+    background-color: #6366f1;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #4f46e5;
+}
+
+/* The list wrapper container */
+body > div:last-of-type {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Styling for each individual To-Do item row */
+body > div:last-of-type > div {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #6366f1;
+}
+
+/* Task description style */
+body > div:last-of-type > div h3 {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: #334155;
+    word-break: break-word;
+}
+
+/* Edit and Delete action buttons styling */
+body > div:last-of-type > div button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/* Specific styling for the Edit button */
+body > div:last-of-type > div button:first-of-type {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+body > div:last-of-type > div button:first-of-type:hover {
+    background-color: #e2e8f0;
+}
+
+/* Specific styling for the Delete button */
+body > div:last-of-type > div button:last-of-type {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+
+body > div:last-of-type > div button:last-of-type:hover {
+    background-color: #fecaca;
+}
+
+/* Global button tap scale feedback effect */
+button:active {
+    transform: scale(0.97);
+}
+
+
+.dark-theme{
+    background-color: #222;
+color: #f5f7fb;
+}
