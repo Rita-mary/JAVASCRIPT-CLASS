@@ -59,7 +59,9 @@
     </header>
 
     <section class="bg-red-50 px-2 py-4">
-      <div class="max-w-300 mx-auto flex items-center justify-between gap-10 min-h-[80vh] md:flex-row flex-col">
+      <div
+        class="max-w-300 mx-auto flex items-center justify-between gap-10 min-h-[80vh] md:flex-row flex-col"
+      >
         <div class="flex-1 flex flex-col gap-4 px-5">
           <h1 class="font-bold text-4xl mt-10 md:mt-0 md:text-6xl">
             Bring Your Craft <span class="text-red-500">Online</span>
@@ -70,33 +72,141 @@
             storefront. No tech skills required.
           </p>
           <div class="flex items-center gap-4">
-            <button class="text-white py-2 px-5 bg-red-500 rounded-md cursor-pointer">
-                Get Started
+            <button
+              class="text-white py-2 px-5 bg-red-500 rounded-md cursor-pointer"
+            >
+              Get Started
             </button>
-            <button class="text-black bg-red-100 rounded-md py-2 px-5 border border-gray-500 cursor-pointer">
-                Learn More
+            <button
+              class="text-black bg-red-100 rounded-md py-2 px-5 border border-gray-500 cursor-pointer"
+            >
+              Learn More
             </button>
           </div>
         </div>
         <div class="flex-1">
-            <img src="./image/artisan1.jpg" alt="Artisan image" class="w-full h-100 rounded-lg">
+          <img
+            src="./image/artisan1.jpg"
+            alt="Artisan image"
+            class="w-full h-100 rounded-lg"
+          />
         </div>
       </div>
     </section>
 
     <section class="bg-white py-8 md:py-20 px-4">
-        <div class="max-w-300 mx-auto ">
-            <div class="flex flex-col items-center gap-4">
-                <h1 class="font-bold text-3xl">Meet Our Artisans</h1>
-                <p class="text-lg text-gray-500 text-center">A growing Community of skilled makers, crafters, and creator</p>
-            </div>
-            <div id="artisanSection" class="grid grid-cols-2 md:grid-cols-3 gap-6 my-10">
-                
-            </div>
-            <div class="flex items-center justify-center">
-                <button class="text-sm rounded-full border border-gray-500 cursor-pointer py-3 px-5 hover:bg-black hover:text-white">Read More</button>
-            </div>
+      <div class="max-w-300 mx-auto">
+        <div class="flex flex-col items-center gap-4">
+          <h1 class="font-bold text-3xl">Meet Our Artisans</h1>
+          <p class="text-lg text-gray-500 text-center">
+            A growing Community of skilled makers, crafters, and creator
+          </p>
         </div>
+        <div
+          id="artisanSection"
+          class="grid grid-cols-2 md:grid-cols-3 gap-6 my-10"
+        ></div>
+        <div class="flex items-center justify-center">
+          <button
+            class="text-sm rounded-full border border-gray-500 cursor-pointer py-3 px-5 hover:bg-black hover:text-white"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
     </section>
+    <section
+      class="bg-red-500 py-10 px-4 flex flex-col items-center gap-5 text-center"
+    >
+      <h1 class="text-white text-3xl font-bold">Stay in the Loop</h1>
+      <p class="text-gray-100 font-medium text-lg">
+        Get new artisan stories, product drops, and platform updates straight to
+        your inbox.
+      </p>
+      <button
+        id="subBtn"
+        class="bg-red-100 text-red-500 rounded-lg py-3 px-8 border-red-500 cursor-pointer"
+      >
+        Subscribe to our Newsletter
+      </button>
+    </section>
+
+    <section
+      id="subModal"
+      class="hidden fixed top-0 left-0 bottom-0 right-0 bg-gray-600/40 items-center justify-center"
+    >
+      <form
+        class="relative py-5 px-4 w-200 rounded-2xl md:w-120 bg-white flex flex-col gap-4"
+      >
+        <button
+          type="button"
+          id="closeBtn"
+          class="absolute top-1 right-4 text-2xl cursor-pointer"
+        >
+          &times
+        </button>
+        <h1 class="font-bold text-xl">Join our newsletter</h1>
+        <p class="text-lg">
+          No spam. Just artisan stories and updates, once a week.
+        </p>
+        <input
+          type="text"
+          placeholder="you@gmail.com"
+          id=""
+          class="border border-gray-400 p-2 rounded-lg focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="bg-red-500 text-white rounded-lg py-2 px-4"
+        >
+          Subscribe
+        </button>
+      </form>
+    </section>
+
+    <section
+      class="w-full bg-gray-800 flex flex-col md:flex-row items-center justify-center border-b-2 border-b-gray-500 text-white text-center p-8 gap-8"
+    >
+      <div class="w-full md:w-1/4">
+        <h1 class="text-2xl font-bold mb-2">WorkForMe</h1>
+        <p class="text-gray-300">
+          Helping artisans and craftsmen bring their work online, one storefront
+          at a time.
+        </p>
+      </div>
+
+      <div class="w-full md:w-3/4 grid grid-cols-3 gap-4">
+        <div>
+          <h1 class="font-semibold mb-2">Company</h1>
+          <ul class="text-gray-300 space-y-1">
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Careers</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+            <li><a href="#" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-semibold mb-2">Resources</h1>
+          <ul class="text-gray-300 space-y-1">
+            <li><a href="#" class="hover:text-white">For Artisans</a></li>
+            <li><a href="#" class="hover:text-white">For Buyers</a></li>
+            <li><a href="#" class="hover:text-white">FAQs</a></li>
+            <li><a href="#" class="hover:text-white">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-semibold mb-2">Legal</h1>
+          <ul class="text-gray-300 space-y-1">
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-white">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-10 px-4 text-center">
+      <p>&copy <span id="year"> </span>WorkForMe. All rights reserved.</p>
+    </footer>
   </body>
 </html>

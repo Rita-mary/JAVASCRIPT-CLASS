@@ -1,6 +1,10 @@
 const menuBtn = document.getElementById('menuBtn');
 const smallNav = document.getElementById('smallNav');
 const artisanSection = document.getElementById('artisanSection');
+const subBtn = document.getElementById('subBtn');
+const closeBtn = document.getElementById('closeBtn');
+const subModal = document.getElementById('subModal');
+const year = document.getElementById('year');
 
 const artisanData = [
   {
@@ -41,14 +45,16 @@ const artisanData = [
   },
 ];
 
-artisanSection.innerHTML = artisanData.map((data) => {
-  return `<div class="rounded-md border border-gray-100 p-5 flex items-center flex-col gap-5 shadow-sm hover:shadow-md">
+artisanSection.innerHTML = artisanData
+  .map((data) => {
+    return `<div class="rounded-md border border-gray-100 p-5 flex items-center flex-col gap-5 shadow-sm hover:shadow-md">
                     <img src="${data.image}" alt="" class="w-15 h-15 rounded-full">
                     <h1>${data.name}</h1>
                     <p class="rounded-full px-2 py-1 bg-red-50 text-red-500 font-semibold">${data.job}</p>
                 </div>
     `;
-}).join("");
+  })
+  .join('');
 
 menuBtn.addEventListener('click', toggleNav);
 
@@ -56,3 +62,33 @@ function toggleNav() {
   smallNav.classList.toggle('hidden');
   smallNav.classList.toggle('flex');
 }
+
+const openModal = () => {
+  subModal.classList.remove('hidden');
+  subModal.classList.add('flex');
+};
+
+const closeModal = () => {
+  subModal.classList.remove('flex');
+  subModal.classList.add('hidden');
+};
+
+subBtn.addEventListener('click', openModal);
+
+closeBtn.addEventListener('click', closeModal);
+
+window.addEventListener('click', windowCloseModal);
+
+function windowCloseModal(e) {
+  if (e.target === subModal) {
+    closeModal();
+  }
+}
+
+const mydate = new Date()
+
+console.log(mydate.getFullYear())
+
+const realYear = new Date().getFullYear()
+
+year.textContent = `${realYear} `
