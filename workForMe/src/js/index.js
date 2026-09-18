@@ -1,10 +1,9 @@
-const menuBtn = document.getElementById('menuBtn');
-const smallNav = document.getElementById('smallNav');
+
 const artisanSection = document.getElementById('artisanSection');
 const subBtn = document.getElementById('subBtn');
 const closeBtn = document.getElementById('closeBtn');
 const subModal = document.getElementById('subModal');
-const year = document.getElementById('year');
+
 
 const artisanData = [
   {
@@ -56,12 +55,6 @@ artisanSection.innerHTML = artisanData
   })
   .join('');
 
-menuBtn.addEventListener('click', toggleNav);
-
-function toggleNav() {
-  smallNav.classList.toggle('hidden');
-  smallNav.classList.toggle('flex');
-}
 
 const openModal = () => {
   subModal.classList.remove('hidden');
@@ -85,10 +78,3 @@ function windowCloseModal(e) {
   }
 }
 
-const mydate = new Date()
-
-console.log(mydate.getFullYear())
-
-const realYear = new Date().getFullYear()
-
-year.textContent = `${realYear} `
